@@ -11,22 +11,29 @@
 
 <body>
   <div class="box-form">
-    <form action="#" id="form">
+    <form action="#window-background" id="form">
       <fieldset>
         <legend><b>Sign in</b></legend>
         <div class="box-email">
           <label for="email">Email: </label>
-          <input type="text" id="email" placeholder="Enter your email">
+          <input type="email" id="email" placeholder="Enter your email" required>
         </div>
         <div class="box-password">
           <label for="password">Password: </label>
-          <input type="password" id="password" placeholder="Enter your password">
+          <input type="password" id="password" placeholder="Enter your password" required>
         </div>
         <div class="btn">
           <button type="submit">Enter</button>
         </div>
         <div class="sign-up">
-          or <a href="../index.html" target="_blank">sign up</a>
+          or&nbsp; <a href="../index.html">sign up</a>
+        </div>
+
+        <div id="window-background">
+          <div id="window">
+            Your data is correct!<br>
+            <a href="#" class="close">Close window</a>
+          </div>
         </div>
       </fieldset>
     </form>

@@ -11,30 +11,38 @@
 
 <body>
   <div class="box-form">
-    <form action="./html/modal.html" id="form">
+    <form action="#window-background" id="form">
       <fieldset>
         <legend><b>Sign up</b></legend>
         <div class="box-name">
           <label for="name">Name: </label>
-          <input type="text" id="name" placeholder="Enter your name">
+          <input type="text" id="name" placeholder="Enter your name" required>
         </div>
         <div class="box-email">
           <label for="email">Email: </label>
-          <input type="text" id="email" placeholder="Enter your email">
+          <input type="email" id="email" placeholder="Enter your email" required>
         </div>
         <div class="box-password">
           <label for="password">Password: </label>
-          <input type="password" id="password" placeholder="Enter your password">
+          <input type="password" id="password" placeholder="Enter your password" required>
         </div>
         <div class="box-confirm-password">
           <label for="confirm-password">Confirm password: </label>
-          <input type="password" id="confirm-password" placeholder="Confirm your password">
+          <input type="password" id="confirm-password" placeholder="Confirm your password"
+            required>
         </div>
         <div class="btn">
           <button type="submit">Register</button>
         </div>
         <div class="sign-in">
-          or <a href="./html/index2.html" target="_blank">sign in</a>
+          or&nbsp; <a href="./html/index2.html">sign in</a>
+        </div>
+
+        <div id="window-background">
+          <div id="window">
+            You have been registered!<br>
+            <a href="#" class="close">Close window</a>
+          </div>
         </div>
       </fieldset>
     </form>

@@ -28,6 +28,9 @@
         <div class="sign-up">
           or&nbsp; <a href="../index.html">sign up</a>
         </div>
+        <div class="btn-js">
+          <button type="submit" class="button-btn">Enter (js)</button>
+        </div>
 
         <div id="window-background">
           <div id="window">
@@ -38,6 +41,12 @@
       </fieldset>
     </form>
   </div>
+  <script>
+    let form = document.querySelector('#form');
+    form.addEventListener('submit', () => {
+      console.log('It is JS');
+    })
+  </script>
 </body>
 
 </html>
